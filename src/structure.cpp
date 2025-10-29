@@ -4,16 +4,16 @@
 #include <iostream>
 using namespace std;
 
-struct student {
+struct Student {
     int age;
     char name[20];
     float marks;
 };
 
-void printDetails(struct student x);
+void printDetails(struct Student x);
 
 int main() {
-     student s1;
+     Student s1;
     cout<<"enter age,name and marks";
     cin>>s1.age;
     cin.ignore();
@@ -24,6 +24,6 @@ int main() {
 
 }
 
-void printDetails(struct student x) {
+void printDetails(struct Student x) {
     cout<<"age :"<<x.age<<" "<<"name : "<<x.name<<" "<<"marks : "<<x.marks<<endl;
 }
